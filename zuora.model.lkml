@@ -6,8 +6,6 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
-explore: _rejected {}
-
 explore: zuora_account {}
 
 explore: zuora_contact {}
