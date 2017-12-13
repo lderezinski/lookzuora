@@ -10,17 +10,17 @@ view: zuora_contact {
 
   dimension: account_id {
     type: string
-    sql: ${TABLE}.AccountId ;;
+    sql: ${TABLE}."AccountId" ;;
   }
 
   dimension: address1 {
     type: string
-    sql: ${TABLE}.Address1 ;;
+    sql: ${TABLE}."Address1" ;;
   }
 
   dimension: address2 {
     type: string
-    sql: ${TABLE}.Address2 ;;
+    sql: ${TABLE}."Address2"
   }
 
   dimension: city {
