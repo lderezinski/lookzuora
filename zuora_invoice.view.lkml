@@ -19,6 +19,7 @@ view: zuora_invoice {
 
   dimension: amount {
     type: number
+    value_format: "$#,##0.00"
     sql: ${TABLE}."Amount" ;;
   }
 
