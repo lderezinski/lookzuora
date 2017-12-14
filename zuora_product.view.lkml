@@ -4,18 +4,18 @@ view: zuora_product {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
 
   dimension: category {
     type: string
-    sql: ${TABLE}.Category ;;
+    sql: ${TABLE}."Category" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -29,12 +29,12 @@ view: zuora_product {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: description {
     type: string
-    sql: ${TABLE}.Description ;;
+    sql: ${TABLE}."Description" ;;
   }
 
   dimension_group: effective_end {
@@ -48,7 +48,7 @@ view: zuora_product {
       quarter,
       year
     ]
-    sql: ${TABLE}.EffectiveEndDate ;;
+    sql: ${TABLE}."EffectiveEndDate" ;;
   }
 
   dimension_group: effective_start {
@@ -62,27 +62,27 @@ view: zuora_product {
       quarter,
       year
     ]
-    sql: ${TABLE}.EffectiveStartDate ;;
+    sql: ${TABLE}."EffectiveStartDate" ;;
   }
 
-  dimension: item_type__ns {
+  dimension: ns_item_type {
     type: string
-    sql: ${TABLE}.ItemType__NS ;;
+    sql: ${TABLE}."ItemType__NS" ;;
   }
 
   dimension: name {
     type: string
-    sql: ${TABLE}.Name ;;
+    sql: ${TABLE}."Name" ;;
   }
 
   dimension: sku {
     type: string
-    sql: ${TABLE}.SKU ;;
+    sql: ${TABLE}."SKU" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -96,7 +96,7 @@ view: zuora_product {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   measure: count {

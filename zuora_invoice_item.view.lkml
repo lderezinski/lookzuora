@@ -4,27 +4,27 @@ view: zuora_invoice_item {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
    dimension: accounting_code {
     type: string
-    sql: ${TABLE}.AccountingCode ;;
+    sql: ${TABLE}."AccountingCode" ;;
   }
 
   dimension: applied_to_charge_number {
     type: string
-    sql: ${TABLE}.AppliedToChargeNumber ;;
+    sql: ${TABLE}."AppliedToChargeNumber" ;;
   }
 
   dimension: applied_to_invoice_item_id {
     type: string
-    sql: ${TABLE}.AppliedToInvoiceItemId ;;
+    sql: ${TABLE}."AppliedToInvoiceItemId" ;;
   }
 
   dimension: charge_amount {
     type: number
-    sql: ${TABLE}.ChargeAmount ;;
+    sql: ${TABLE}."ChargeAmount" ;;
   }
 
   dimension_group: charge {
@@ -38,37 +38,37 @@ view: zuora_invoice_item {
       quarter,
       year
     ]
-    sql: ${TABLE}.ChargeDate ;;
+    sql: ${TABLE}."ChargeDate" ;;
   }
 
   dimension: charge_description {
     type: string
-    sql: ${TABLE}.ChargeDescription ;;
+    sql: ${TABLE}."ChargeDescription" ;;
   }
 
   dimension: charge_id {
     type: string
-    sql: ${TABLE}.ChargeId ;;
+    sql: ${TABLE}."ChargeId" ;;
   }
 
   dimension: charge_name {
     type: string
-    sql: ${TABLE}.ChargeName ;;
+    sql: ${TABLE}."ChargeName" ;;
   }
 
   dimension: charge_number {
     type: string
-    sql: ${TABLE}.ChargeNumber ;;
+    sql: ${TABLE}."ChargeNumber" ;;
   }
 
   dimension: charge_type {
     type: string
-    sql: ${TABLE}.ChargeType ;;
+    sql: ${TABLE}."ChargeType" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -82,57 +82,57 @@ view: zuora_invoice_item {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
-  dimension: integration_id__ns {
+  dimension: ns_integration_id {
     type: string
-    sql: ${TABLE}.IntegrationId__NS ;;
+    sql: ${TABLE}."IntegrationId__NS" ;;
   }
 
-  dimension: integration_status__ns {
+  dimension: ns_integration_status {
     type: string
-    sql: ${TABLE}.IntegrationStatus__NS ;;
+    sql: ${TABLE}."IntegrationStatus__NS" ;;
   }
 
   dimension: invoice_id {
     type: string
-    sql: ${TABLE}.InvoiceId ;;
+    sql: ${TABLE}."InvoiceId" ;;
   }
 
   dimension: processing_type {
     type: number
-    sql: ${TABLE}.ProcessingType ;;
+    sql: ${TABLE}."ProcessingType" ;;
   }
 
   dimension: product_description {
     type: string
-    sql: ${TABLE}.ProductDescription ;;
+    sql: ${TABLE}."ProductDescription" ;;
   }
 
   dimension: product_id {
     type: string
-    sql: ${TABLE}.ProductId ;;
+    sql: ${TABLE}."ProductId" ;;
   }
 
   dimension: product_name {
     type: string
-    sql: ${TABLE}.ProductName ;;
+    sql: ${TABLE}."ProductName" ;;
   }
 
   dimension: quantity {
     type: number
-    sql: ${TABLE}.Quantity ;;
+    sql: ${TABLE}."Quantity" ;;
   }
 
   dimension: rate_plan_charge_id {
     type: string
-    sql: ${TABLE}.RatePlanChargeId ;;
+    sql: ${TABLE}."RatePlanChargeId" ;;
   }
 
   dimension: rev_rec_code {
     type: string
-    sql: ${TABLE}.RevRecCode ;;
+    sql: ${TABLE}."RevRecCode" ;;
   }
 
   dimension_group: rev_rec_start {
@@ -146,12 +146,12 @@ view: zuora_invoice_item {
       quarter,
       year
     ]
-    sql: ${TABLE}.RevRecStartDate ;;
+    sql: ${TABLE}."RevRecStartDate" ;;
   }
 
   dimension: rev_rec_trigger_condition {
     type: string
-    sql: ${TABLE}.RevRecTriggerCondition ;;
+    sql: ${TABLE}."RevRecTriggerCondition" ;;
   }
 
   dimension_group: service_end {
@@ -165,7 +165,7 @@ view: zuora_invoice_item {
       quarter,
       year
     ]
-    sql: ${TABLE}.ServiceEndDate ;;
+    sql: ${TABLE}."ServiceEndDate" ;;
   }
 
   dimension_group: service_start {
@@ -179,62 +179,62 @@ view: zuora_invoice_item {
       quarter,
       year
     ]
-    sql: ${TABLE}.ServiceStartDate ;;
+    sql: ${TABLE}."ServiceStartDate" ;;
   }
 
   dimension: sku {
     type: string
-    sql: ${TABLE}.SKU ;;
+    sql: ${TABLE}."SKU" ;;
   }
 
   dimension: subscription_id {
     type: string
-    sql: ${TABLE}.SubscriptionId ;;
+    sql: ${TABLE}."SubscriptionId" ;;
   }
 
   dimension: subscription_number {
     type: string
-    sql: ${TABLE}.SubscriptionNumber ;;
+    sql: ${TABLE}."SubscriptionNumber" ;;
   }
 
-  dimension: sync_date__ns {
+  dimension: ns_sync_date {
     type: string
-    sql: ${TABLE}.SyncDate__NS ;;
+    sql: ${TABLE}."SyncDate__NS" ;;
   }
 
   dimension: tax_amount {
     type: number
-    sql: ${TABLE}.TaxAmount ;;
+    sql: ${TABLE}."TaxAmount" ;;
   }
 
   dimension: tax_code {
     type: string
-    sql: ${TABLE}.TaxCode ;;
+    sql: ${TABLE}."TaxCode" ;;
   }
 
   dimension: tax_exempt_amount {
     type: number
-    sql: ${TABLE}.TaxExemptAmount ;;
+    sql: ${TABLE}."TaxExemptAmount" ;;
   }
 
   dimension: tax_mode {
     type: string
-    sql: ${TABLE}.TaxMode ;;
+    sql: ${TABLE}."TaxMode" ;;
   }
 
   dimension: unit_price {
     type: number
-    sql: ${TABLE}.UnitPrice ;;
+    sql: ${TABLE}."UnitPrice" ;;
   }
 
   dimension: uom {
     type: string
-    sql: ${TABLE}.UOM ;;
+    sql: ${TABLE}."UOM" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -248,7 +248,7 @@ view: zuora_invoice_item {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   measure: count {

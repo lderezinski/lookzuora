@@ -4,7 +4,7 @@ view: zuora_contact {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
 
@@ -25,18 +25,18 @@ view: zuora_contact {
 
   dimension: city {
     type: string
-    sql: ${TABLE}.City ;;
+    sql: ${TABLE}."City" ;;
   }
 
   dimension: country {
     type: string
     map_layer_name: countries
-    sql: ${TABLE}.Country ;;
+    sql: ${TABLE}."Country" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -50,62 +50,62 @@ view: zuora_contact {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: description {
     type: string
-    sql: ${TABLE}.Description ;;
+    sql: ${TABLE}."Description" ;;
   }
 
   dimension: first_name {
     type: string
-    sql: ${TABLE}.FirstName ;;
+    sql: ${TABLE}."FirstName" ;;
   }
 
   dimension: last_name {
     type: string
-    sql: ${TABLE}.LastName ;;
+    sql: ${TABLE}."LastName" ;;
   }
 
   dimension: mobile_phone {
     type: string
-    sql: ${TABLE}.MobilePhone ;;
+    sql: ${TABLE}."MobilePhone" ;;
   }
 
   dimension: nick_name {
     type: string
-    sql: ${TABLE}.NickName ;;
+    sql: ${TABLE}."NickName" ;;
   }
 
   dimension: other_phone {
     type: string
-    sql: ${TABLE}.OtherPhone ;;
+    sql: ${TABLE}."OtherPhone" ;;
   }
 
   dimension: other_phone_type {
     type: string
-    sql: ${TABLE}.OtherPhoneType ;;
+    sql: ${TABLE}."OtherPhoneType" ;;
   }
 
   dimension: personal_email {
     type: string
-    sql: ${TABLE}.PersonalEmail ;;
+    sql: ${TABLE}."PersonalEmail" ;;
   }
 
   dimension: postal_code {
     type: string
-    sql: ${TABLE}.PostalCode ;;
+    sql: ${TABLE}."PostalCode" ;;
   }
 
   dimension: state {
     type: string
-    sql: ${TABLE}.State ;;
+    sql: ${TABLE}."State" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -119,17 +119,17 @@ view: zuora_contact {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   dimension: work_email {
     type: string
-    sql: ${TABLE}.WorkEmail ;;
+    sql: ${TABLE}."WorkEmail" ;;
   }
 
   dimension: work_phone {
     type: string
-    sql: ${TABLE}.WorkPhone ;;
+    sql: ${TABLE}."WorkPhone" ;;
   }
 
   measure: count {

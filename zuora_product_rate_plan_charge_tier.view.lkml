@@ -4,13 +4,13 @@ view: zuora_product_rate_plan_charge_tier {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -24,52 +24,52 @@ view: zuora_product_rate_plan_charge_tier {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: currency {
     type: string
-    sql: ${TABLE}.Currency ;;
+    sql: ${TABLE}."Currency" ;;
   }
 
   dimension: ending_unit {
     type: number
-    sql: ${TABLE}.EndingUnit ;;
+    sql: ${TABLE}."EndingUnit" ;;
   }
 
   dimension: is_overage_price {
     type: yesno
-    sql: ${TABLE}.IsOveragePrice ;;
+    sql: ${TABLE}."IsOveragePrice" ;;
   }
 
   dimension: price {
     type: number
-    sql: ${TABLE}.Price ;;
+    sql: ${TABLE}."Price" ;;
   }
 
   dimension: price_format {
     type: string
-    sql: ${TABLE}.PriceFormat ;;
+    sql: ${TABLE}."PriceFormat" ;;
   }
 
   dimension: product_rate_plan_charge_id {
     type: string
-    sql: ${TABLE}.ProductRatePlanChargeId ;;
+    sql: ${TABLE}."ProductRatePlanChargeId" ;;
   }
 
   dimension: starting_unit {
     type: number
-    sql: ${TABLE}.StartingUnit ;;
+    sql: ${TABLE}."StartingUnit" ;;
   }
 
   dimension: tier {
     type: number
-    sql: ${TABLE}.Tier ;;
+    sql: ${TABLE}."Tier" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -83,7 +83,7 @@ view: zuora_product_rate_plan_charge_tier {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   measure: count {

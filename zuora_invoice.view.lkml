@@ -4,37 +4,37 @@ view: zuora_invoice {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
   dimension: account_id {
     type: string
-    sql: ${TABLE}.AccountId ;;
+    sql: ${TABLE}."AccountId" ;;
   }
 
   dimension: adjustment_amount {
     type: number
-    sql: ${TABLE}.AdjustmentAmount ;;
+    sql: ${TABLE}."AdjustmentAmount" ;;
   }
 
   dimension: amount {
     type: number
-    sql: ${TABLE}.Amount ;;
+    sql: ${TABLE}."Amount" ;;
   }
 
   dimension: amount_without_tax {
     type: number
-    sql: ${TABLE}.AmountWithoutTax ;;
+    sql: ${TABLE}."AmountWithoutTax" ;;
   }
 
   dimension: balance {
     type: number
-    sql: ${TABLE}.Balance ;;
+    sql: ${TABLE}."Balance" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -48,12 +48,12 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: credit_balance_adjustment_amount {
     type: number
-    sql: ${TABLE}.CreditBalanceAdjustmentAmount ;;
+    sql: ${TABLE}."CreditBalanceAdjustmentAmount" ;;
   }
 
   dimension_group: due {
@@ -67,32 +67,32 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.DueDate ;;
+    sql: ${TABLE}."DueDate" ;;
   }
 
   dimension: includes_one_time {
     type: yesno
-    sql: ${TABLE}.IncludesOneTime ;;
+    sql: ${TABLE}."IncludesOneTime" ;;
   }
 
   dimension: includes_recurring {
     type: yesno
-    sql: ${TABLE}.IncludesRecurring ;;
+    sql: ${TABLE}."IncludesRecurring" ;;
   }
 
   dimension: includes_usage {
     type: yesno
-    sql: ${TABLE}.IncludesUsage ;;
+    sql: ${TABLE}."IncludesUsage" ;;
   }
 
-  dimension: integration_id__ns {
+  dimension: ns_integration_id {
     type: string
-    sql: ${TABLE}.IntegrationId__NS ;;
+    sql: ${TABLE}."IntegrationId__NS" ;;
   }
 
-  dimension: integration_status__ns {
+  dimension: ns_integration_status {
     type: string
-    sql: ${TABLE}.IntegrationStatus__NS ;;
+    sql: ${TABLE}."IntegrationStatus__NS" ;;
   }
 
   dimension_group: invoice {
@@ -106,12 +106,12 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.InvoiceDate ;;
+    sql: ${TABLE}."InvoiceDate" ;;
   }
 
   dimension: invoice_number {
     type: string
-    sql: ${TABLE}.InvoiceNumber ;;
+    sql: ${TABLE}."InvoiceNumber" ;;
   }
 
   dimension_group: last_email_sent {
@@ -125,17 +125,17 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.LastEmailSentDate ;;
+    sql: ${TABLE}."LastEmailSentDate" ;;
   }
 
   dimension: payment_amount {
     type: number
-    sql: ${TABLE}.PaymentAmount ;;
+    sql: ${TABLE}."PaymentAmount" ;;
   }
 
   dimension: posted_by {
     type: string
-    sql: ${TABLE}.PostedBy ;;
+    sql: ${TABLE}."PostedBy" ;;
   }
 
   dimension_group: posted {
@@ -149,27 +149,27 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.PostedDate ;;
+    sql: ${TABLE}."PostedDate" ;;
   }
 
-  dimension: public__c {
+  dimension: public_invoice {
     type: string
-    sql: ${TABLE}.Public__c ;;
+    sql: ${TABLE}."Public__c" ;;
   }
 
   dimension: refund_amount {
     type: number
-    sql: ${TABLE}.RefundAmount ;;
+    sql: ${TABLE}."RefundAmount" ;;
   }
 
   dimension: status {
     type: string
-    sql: ${TABLE}.Status ;;
+    sql: ${TABLE}."Status" ;;
   }
 
-  dimension: sync_date__ns {
+  dimension: ns_sync_date {
     type: string
-    sql: ${TABLE}.SyncDate__NS ;;
+    sql: ${TABLE}."SyncDate__NS" ;;
   }
 
   dimension_group: target {
@@ -183,27 +183,27 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.TargetDate ;;
+    sql: ${TABLE}."TargetDate" ;;
   }
 
   dimension: tax_amount {
     type: number
-    sql: ${TABLE}.TaxAmount ;;
+    sql: ${TABLE}."TaxAmount" ;;
   }
 
   dimension: tax_exempt_amount {
     type: number
-    sql: ${TABLE}.TaxExemptAmount ;;
+    sql: ${TABLE}."TaxExemptAmount" ;;
   }
 
   dimension: transferred_to_accounting {
     type: string
-    sql: ${TABLE}.TransferredToAccounting ;;
+    sql: ${TABLE}."TransferredToAccounting" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -217,7 +217,7 @@ view: zuora_invoice {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   measure: count {

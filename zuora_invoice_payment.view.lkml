@@ -4,18 +4,18 @@ view: zuora_invoice_payment {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
 
   dimension: amount {
     type: number
-    sql: ${TABLE}.Amount ;;
+    sql: ${TABLE}."Amount" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -29,27 +29,27 @@ view: zuora_invoice_payment {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: invoice_id {
     type: string
-    sql: ${TABLE}.InvoiceId ;;
+    sql: ${TABLE}."InvoiceId" ;;
   }
 
   dimension: payment_id {
     type: string
-    sql: ${TABLE}.PaymentId ;;
+    sql: ${TABLE}."PaymentId" ;;
   }
 
   dimension: refund_amount {
     type: number
-    sql: ${TABLE}.RefundAmount ;;
+    sql: ${TABLE}."RefundAmount" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -63,7 +63,7 @@ view: zuora_invoice_payment {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   measure: count {

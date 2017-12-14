@@ -4,18 +4,18 @@ view: zuora_unit_of_measure {
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
 
   dimension: active {
     type: yesno
-    sql: ${TABLE}.Active ;;
+    sql: ${TABLE}."Active" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -29,32 +29,32 @@ view: zuora_unit_of_measure {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: decimal_places {
     type: number
-    sql: ${TABLE}.DecimalPlaces ;;
+    sql: ${TABLE}."DecimalPlaces" ;;
   }
 
   dimension: displayed_as {
     type: string
-    sql: ${TABLE}.DisplayedAs ;;
+    sql: ${TABLE}."DisplayedAs" ;;
   }
 
   dimension: rounding_mode {
     type: string
-    sql: ${TABLE}.RoundingMode ;;
+    sql: ${TABLE}."RoundingMode" ;;
   }
 
   dimension: uom_name {
     type: string
-    sql: ${TABLE}.UomName ;;
+    sql: ${TABLE}."UomName" ;;
   }
 
   dimension: updated_by_id {
     type: string
-    sql: ${TABLE}.UpdatedById ;;
+    sql: ${TABLE}."UpdatedById" ;;
   }
 
   dimension_group: updated {
@@ -68,7 +68,7 @@ view: zuora_unit_of_measure {
       quarter,
       year
     ]
-    sql: ${TABLE}.UpdatedDate ;;
+    sql: ${TABLE}."UpdatedDate" ;;
   }
 
   measure: count {
