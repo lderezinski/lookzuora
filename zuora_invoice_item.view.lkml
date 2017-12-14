@@ -261,6 +261,7 @@ view: zuora_invoice_item {
   }
   measure: total_amount {
     type: sum
+    value_format: "$#,##0.00"
     sql: ${charge_amount} ;;
   }
 }
