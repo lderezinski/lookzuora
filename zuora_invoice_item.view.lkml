@@ -255,4 +255,12 @@ view: zuora_invoice_item {
     type: count
     drill_fields: [id, product_name, charge_name]
   }
+  measure: total_qnt {
+    type: sum
+    sql: ${quantity} ;;
+  }
+  measure: total_amount {
+    type: sum
+    sql: ${charge_amount} ;;
+  }
 }
