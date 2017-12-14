@@ -224,4 +224,8 @@ view: zuora_invoice {
     type: count
     drill_fields: [id]
   }
+  measure: total_amount{
+    type:  sum
+    sql: ${amount} ;;
+  }
 }
